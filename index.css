@@ -12,6 +12,9 @@ body {
   min-width: 900px;
   background-color: #000000;
 }
+body > div {
+  padding-inline: 1rem;
+}
 
 .text-align-center {
   text-align: center;

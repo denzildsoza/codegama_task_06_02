@@ -11,6 +11,9 @@
 body{
   min-width: 900px;
   background-color: #000000;
+  >div{
+    padding-inline: 1rem;
+  }
 }
 
 
