@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  user-select: none;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", serif;
+}
+
+body {
+  min-width: 900px;
+  background-color: #000000;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.main-heading {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: 0.014em;
+}
+
+.heading {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.39em;
+  letter-spacing: 0.014em;
+}
+
+.sub-heading {
+  font-size: 2.5rem;
+  line-height: 1.39em;
+  letter-spacing: 0.014em;
+}
+
+.text {
+  font-size: 1.9rem;
+  line-height: 1.421;
+  letter-spacing: 0.012em;
+  font-weight: 200;
+}
+
+.text-transparent {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.padding-top-3 {
+  padding-top: 3rem;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 0.6em;
+  padding: 1em;
+}
+
+.button-primary {
+  color: black;
+  background-color: white;
+  font-weight: 600;
+}
+
+.button-secondary {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  height: 3rem;
+  width: 6rem;
+}
+
+#banner-avater {
+  background-color: black;
+  background-image: url("./Assets/banner-avater.png");
+  background-size: cover;
+}
+#banner-avater #content {
+  max-width: 60rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 10rem;
+}
+#banner-avater #dashboard {
+  max-width: 90rem;
+  margin: auto;
+  padding-top: 2rem;
+}
+#banner-avater #buttons {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1.8rem;
+}
+#banner-avater .redirect {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+
+#nav-bar {
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 110rem;
+  margin: auto;
+  padding-block: 2rem;
+}
+#nav-bar #right {
+  display: flex;
+  gap: 2rem;
+}
+
+#brands {
+  background-color: #000000;
+  padding-block: 15rem;
+}
+#brands img {
+  width: 13rem;
+}
+#brands #content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  margin-inline: auto;
+}
+
+#manage-dashboard {
+  background-color: #000000;
+}
+#manage-dashboard #content {
+  display: flex;
+  align-items: center;
+  max-width: 110rem;
+  margin: auto;
+  gap: 4rem;
+}
+#manage-dashboard button {
+  font-size: 1.8rem;
+  background-color: #2e2c2c;
+  padding: 0.8em 2em;
+  margin-top: 3rem;
+}
+
+#advantages-row {
+  background-color: #000000;
+}
+#advantages-row #content {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "advantages-1 advantages-2 advantages-3";
+  gap: 4rem;
+  max-width: 110rem;
+  margin: auto;
+  padding-block: 15rem;
+}
+#advantages-row #content div {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  border-radius: 4px;
+}
+#advantages-row #content div img {
+  height: 4rem;
+  width: 4rem;
+}
+
+#advantages-2 {
+  border-inline: 1px rgba(255, 255, 255, 0.4);
+  border-inline-style: dashed;
+  padding-inline: 2rem;
+}
+
+#advantages-grid {
+  background-color: #000000;
+}
+#advantages-grid #content {
+  max-width: 110rem;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "advantages-4  advantages-6" "advantages-5  advantages-6";
+}
+#advantages-grid div {
+  padding: 4rem;
+}
+
+#advantages-4 {
+  grid-area: advantages-4;
+}
+
+#advantages-5 {
+  grid-area: advantages-5;
+  border-top: 1px rgba(255, 255, 255, 0.4);
+  border-top-style: dashed;
+}
+
+#advantages-6 {
+  grid-area: advantages-6;
+  border-left: 1px rgba(255, 255, 255, 0.4);
+  border-left-style: dashed;
+}
+
+#features {
+  background-color: #000000;
+}
+#features #content {
+  max-width: 110rem;
+  margin: auto;
+  padding-block: 15rem;
+}
+#features img {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+#features .grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+#features .grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2rem;
+  max-width: 300px;
+}
+#features .grid div p {
+  padding: 1rem 1rem 0;
+  text-overflow: ellipsis;
+}
+
+#features-1 {
+  background: linear-gradient(135deg, #0b4f22, #127a3a, #0b4f22);
+}
+
+#features-2 {
+  background: linear-gradient(135deg, #3c0f76, #6a1b9a);
+}
+
+#features-3 {
+  background: linear-gradient(135deg, #8a5a1e, #b07f3a);
+}
+
+#video {
+  background-color: #000000;
+}
+#video #content {
+  max-width: 110rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#video #buttons {
+  font-size: 2rem;
+  background-color: #2e2c2c;
+  border-radius: 2em;
+  margin-top: 2rem;
+}
+#video #buttons #internal {
+  background-color: #201c1c;
+  border-radius: 2em;
+  padding: 0.6em 2em;
+  margin-left: 0.6em;
+}
+
+#reviews {
+  background-color: #000000;
+}
+#reviews #content {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "advantages-1 advantages-2 advantages-3";
+  gap: 4rem;
+  max-width: 110rem;
+  margin: auto;
+  padding-bottom: 15rem;
+}
+#reviews #content div {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+  border-radius: 4px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 2rem;
+}
+
+#advantage-table {
+  background-color: #000000;
+}
+#advantage-table #content {
+  max-width: 110rem;
+  margin: auto;
+}
+#advantage-table #head {
+  text-align: center;
+}
+
+#advantages-tablets {
+  background-color: #000000;
+}
+#advantages-tablets #content {
+  max-width: 110rem;
+  margin: auto;
+}
+#advantages-tablets #grid {
+  display: grid;
+  grid-template-areas: "tab1 tab1 tab1 tab2 tab2" "tab1 tab1 tab1 tab2 tab2" "tab3 tab3 tab3 tab3 tab3";
+  gap: 4rem;
+}
+#advantages-tablets #grid > div {
+  position: relative;
+}
+#advantages-tablets #grid img {
+  border-radius: 3rem;
+}
+#advantages-tablets #tab1 {
+  grid-area: tab1;
+}
+#advantages-tablets #tab1 img {
+  height: 100%;
+}
+#advantages-tablets #tab2 {
+  grid-area: tab2;
+}
+#advantages-tablets .text-content {
+  position: absolute;
+  bottom: 0;
+  padding: 6rem;
+  box-shadow: rgb(12, 11, 11) 0px -159px 60px -28px inset;
+  border-radius: 2rem;
+}
+#advantages-tablets .text-content .text {
+  font-size: 1.4rem;
+}
+#advantages-tablets #tab3 {
+  grid-area: tab3;
+}
+#advantages-tablets #tab3 .text {
+  width: 60%;
+}
+
+#faqs {
+  background-color: #000000;
+}
+#faqs #content {
+  max-width: 70rem;
+  margin: auto;
+  padding-block: 20rem;
+}
+#faqs .shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+#faqs #card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#faqs .text-transparent {
+  font-size: 1.4rem;
+}
+#faqs .card {
+  padding: 2rem;
+  background-color: #201c1c;
+  border-radius: 2rem;
+}
+#faqs .small {
+  font-size: 1.4rem;
+}
+
+#contact-page {
+  background-image: url("Assets/footer-img.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: fit-content;
+}
+#contact-page #content {
+  padding: 3rem;
+}
+#contact-page #contacts {
+  max-width: 60%;
+}
+#contact-page .heading {
+  max-width: 40%;
+}
+#contact-page #arrow {
+  height: 4rem;
+  width: 4rem;
+}
+#contact-page .logos {
+  height: 2rem;
+  width: 2rem;
+}
+#contact-page #social-media-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#contact-page #right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-left: 1px dashed #fff;
+  padding-left: 2rem;
+}
+#contact-page #contacts {
+  display: flex;
+  gap: 2rem;
+}
+#contact-page .card {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
